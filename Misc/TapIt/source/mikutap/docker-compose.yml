@@ -1,0 +1,8 @@
+version: '2'
+services:
+  mikutap:
+    image: nginx:alpine
+    volumes:
+      - .:/usr/share/nginx/html
+    ports:
+      - "28786:80"
